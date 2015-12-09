@@ -1,0 +1,52 @@
+<html>
+<head>
+  <title>Registration</title>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="./public/css/reg_style.css">
+
+</head>
+<body>
+
+<form class="login">
+   
+  <fieldset>
+    
+    <legend class="legend">Registration</legend>
+    
+    <div class="input">
+      <input placeholder="Username" id="user" name="user" required />
+      <span><i class="fa fa-envelope-o"></i></span>
+    </div>
+    
+    <div class="input">
+      <input type="password" placeholder="Password" id="pass" name="pass" required />
+      <span><i class="fa fa-lock"></i></span>
+    </div>
+
+    <div class="input">
+      <textarea placeholder="About" name="about" id="about"></textarea>
+      <span><i class="fa fa-info"></i></span>
+    </div>
+    <div class="input file-upload">
+    <span>Pic. </span>
+      <input type="file" name="file" id="file" required />
+      
+    </div>
+    <button type="submit" class="submit"><i class="fa fa-long-arrow-right"></i></button>
+    
+  </fieldset>
+  
+  <div class="feedback">
+    registation successful <br />
+    redirecting...
+  </div>
+  <div class="nfeedback">
+    registation fail <br />
+  </div>
+  
+</form>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="./public/js/reg_script.js"></script>
+</body>
+</html>

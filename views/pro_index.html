@@ -1,0 +1,98 @@
+<html>
+
+<head>
+    <title>Profile</title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./public/css/pro_style.css">
+    <style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+    
+    li {
+        float: left;
+        border-right: 1px solid #bbb;
+    }
+    
+    li:last-child {
+        border-right: none;
+    }
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover:not(.active .home) {
+        background-color: #111;
+    }
+    
+    .active {
+        background-color: #4CAF50;
+    }
+    
+    .logout {
+        background-color: #5C5CAF;
+    }
+    
+    .edit {
+        background-color: #4d4d4d;
+    }
+    
+    .home {
+        display: block;
+        background-image: url(https://i.imgur.com/dsyLjOB.png);
+        opacity: 0.2;
+        background-repeat: no-repeat;
+        padding: 7px 16px;
+        background-position: center;
+    }
+    
+    .label {
+        padding-left: 50%;
+        /*padding-right: 50%;*/
+    }
+    
+.circular{
+ width: 200px;
+ height: 200px;
+ background-image: url('{{.Pic}}');
+ background-size: cover;
+ display: block;
+ border-radius: 100px;
+ -webkit-border-radius: 100px;
+ -moz-border-radius: 100px;
+}
+
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li class="home">
+            <a href="/"></a>
+        </li>
+        <ul style="float:right;list-style-type:none;">
+            <li class="edit"><a href="/edit">Edit</a></li>
+            <li class="logout"><a href="/logout">Logout</a></li>
+        </ul>
+    </ul>
+    <div>
+        <div class="circular"></div>
+        <h1>Hello, {{.User}}</h1></br>
+        <h2>What we know about you: </h2>
+        <p>{{.About}}</p>
+        </br>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="pro_script.js"></script>
+</body>
+
+</html>
