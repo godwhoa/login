@@ -44,7 +44,7 @@ func AddUser(db SqliteDB, u Users) (err error) {
 	return err
 }
 
-// AddUser inserts user data into the database
+// Update user data
 func UpdateUser(db SqliteDB, u Users) (err error) {
 
 	sqlStmt := "UPDATE USERS SET USER=?,PASS=?,ABOUT=?,PIC=?"
