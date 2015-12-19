@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/godwhoa/random-shit/login/crypt"
-	"github.com/godwhoa/random-shit/login/store"
-	"github.com/godwhoa/random-shit/login/upload"
+	"github.com/godwhoa/login/crypt"
+	"github.com/godwhoa/login/store"
+	"github.com/godwhoa/login/upload"
 	"github.com/gorilla/sessions"
 	"github.com/imdario/mergo"
 	"github.com/kennygrant/sanitize"
